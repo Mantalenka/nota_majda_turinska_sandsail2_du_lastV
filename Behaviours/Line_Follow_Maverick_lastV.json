@@ -1,0 +1,276 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"3WcadhFCri80ZkCwZa1u0iESHan9lLnO": {
+			"height": 60,
+			"title": "sequence_MaverickBranch",
+			"width": 253,
+			"x": 774,
+			"y": -214
+		},
+		"FIC8aXTUB8Coo1dYghlYKqTZPJOrPOTp": {
+			"height": 94,
+			"title": "store",
+			"width": 499,
+			"x": 1087,
+			"y": -112
+		},
+		"JWokyrIU81ezgGuCQ3cGm2YshSzmUDvI": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 210,
+			"y": 10
+		},
+		"NyLHqmD51iFduIkUusy9U8Olyyc9teGD": {
+			"height": 94,
+			"title": "store",
+			"width": 304,
+			"x": 1101,
+			"y": 203
+		},
+		"RoHNRTAcCffkWRji4W31ojASf1GgKphg": {
+			"height": 60,
+			"title": "sequence_FollowBranch",
+			"width": 237,
+			"x": 772,
+			"y": 83
+		},
+		"SfdGRk4ohb0GpESgPM6Yajulpr6k2XQj": {
+			"height": 132,
+			"title": "formation.moveCustomGroup",
+			"width": 427,
+			"x": 1092,
+			"y": 300
+		},
+		"c6LYuRgaI0LVprinePLHcH6ZTbKTcXyT": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 398,
+			"y": 73
+		},
+		"clUa3Ap3dPKQ9yy9l06jw2JsufG5Mygs": {
+			"height": 94,
+			"title": "store",
+			"width": 520,
+			"x": 1101,
+			"y": 97
+		},
+		"gJzcvHwap02yvJvXebHCT7FQIPdDHz8h": {
+			"height": 94,
+			"title": "store",
+			"width": 204,
+			"x": 399,
+			"y": -165
+		},
+		"kiQgmRArcgJQ7rDeKgViwecTOjLEhVDk": {
+			"height": 92,
+			"title": "store",
+			"width": 131,
+			"x": 1179,
+			"y": -376
+		},
+		"nenk4ewiE4iQTW9krmvLwib07zSpF5LW": {
+			"height": 92,
+			"title": "store",
+			"width": 179,
+			"x": 1112,
+			"y": 13
+		},
+		"tKhtp1kb3uyjCYw9AsCqMYyHGMT9Z1mr": {
+			"height": 90,
+			"title": "Common.relativeMove",
+			"width": 334,
+			"x": 1149,
+			"y": -281
+		},
+		"uDdzlI9IqHoZX5mUumvH8vzB5sKDghKk": {
+			"height": 94,
+			"title": "store_Draw",
+			"width": 444,
+			"x": 1177,
+			"y": -473
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_majda_turinska_sandsail2_du.Maverick_orig", "nota_majda_turinska_sandsail2_du.maverick_role" ],
+		"name": "Maverick"
+	}, {
+		"categories": [ "nota_majda_turinska_sandsail2_du.follow_role" ],
+		"name": "Follow"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "gJzcvHwap02yvJvXebHCT7FQIPdDHz8h",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "wind"
+			}, {
+				"name": "value",
+				"value": "{Spring.GetWind()}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "uDdzlI9IqHoZX5mUumvH8vzB5sKDghKk",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "sVariable"
+					}, {
+						"name": "value",
+						"value": "nota_majda_turinska_sandsail2_du.DrawDirectionWind()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "kiQgmRArcgJQ7rDeKgViwecTOjLEhVDk",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "Maverick"
+					}, {
+						"name": "value",
+						"value": "units[1]"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "tKhtp1kb3uyjCYw9AsCqMYyHGMT9Z1mr",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "dist",
+						"value": "{x = wind[1]*10, z = wind[3]*10}"
+					}, {
+						"name": "fight",
+						"value": "false"
+					}, {
+						"name": "scriptName",
+						"value": "Common.relativeMove"
+					} ],
+					"scriptName": "Common.relativeMove"
+				} ],
+				"id": "3WcadhFCri80ZkCwZa1u0iESHan9lLnO",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "FIC8aXTUB8Coo1dYghlYKqTZPJOrPOTp",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "unitData"
+					}, {
+						"name": "value",
+						"value": "nota_majda_turinska_sandsail2_du.Linear_Formation(units)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "nenk4ewiE4iQTW9krmvLwib07zSpF5LW",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "groupFormation"
+					}, {
+						"name": "value",
+						"value": "unitData.group"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "clUa3Ap3dPKQ9yy9l06jw2JsufG5Mygs",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "initFormation"
+					}, {
+						"name": "value",
+						"value": "formation.StaticTransform(unitData.formation, 0, nil, Vec3(2,2,2))"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "NyLHqmD51iFduIkUusy9U8Olyyc9teGD",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "end_pos"
+					}, {
+						"name": "value",
+						"value": "{Spring.GetUnitPosition(Maverick)}"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "SfdGRk4ohb0GpESgPM6Yajulpr6k2XQj",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "groupDefintion",
+						"value": "groupFormation"
+					}, {
+						"name": "position",
+						"value": "Vec3(end_pos[1], end_pos[2], end_pos[3])"
+					}, {
+						"name": "formation",
+						"value": "initFormation"
+					}, {
+						"name": "fight",
+						"value": "false"
+					}, {
+						"name": "scriptName",
+						"value": "formation.moveCustomGroup"
+					} ],
+					"scriptName": "formation.moveCustomGroup"
+				} ],
+				"id": "RoHNRTAcCffkWRji4W31ojASf1GgKphg",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "c6LYuRgaI0LVprinePLHcH6ZTbKTcXyT",
+			"nodeType": "roleSplit",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "JWokyrIU81ezgGuCQ3cGm2YshSzmUDvI",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
